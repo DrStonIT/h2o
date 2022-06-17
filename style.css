@@ -1,0 +1,429 @@
+.container {
+    width:1050px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+.menu {
+    background: linear-gradient(to left, #780206, #061161);
+    width: 1040px;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 2px;
+}
+
+.submenu {
+    position: absolute;
+    visibility: hidden;
+    background-color: black;
+    padding: 4px;
+    border-radius: 4px;
+    width: 150px;
+    opacity: 0;
+
+}
+
+.menu, .submenu, .menu-item {
+    display: inline-block;
+
+}
+
+.submenu .menu-item {
+    width: 95%;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item:hover>.submenu {
+    visibility: visible;
+    z-index: 1;
+    left: -10px;
+    top: 20px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.important{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.left-menu {
+    width: 200px;
+    /* border-bottom: 1px solid #ff033e;
+    border-top: 1px solid #ff033e;
+    border-left: 1px solid #ff033e; */
+    border-radius: 10px;
+    margin: 10px 0 10px 10px;
+    background: linear-gradient(to left, #FFFFFF, #780206, #061161);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.l-m-items {
+    margin: 10px;
+
+    font-size: 22px;
+    font-family: Arial;
+    color: white;
+}
+
+#profile {
+    color: #D3D3D3;
+}
+
+.left-adversiting {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-right: 1px solid #D3D3D3;
+}
+
+.site {
+    font-size: 20px;
+    color: #4682B4;
+}
+
+.site:hover {
+    color: #4169E1;
+}
+
+.link {
+    color: #A9A9A9;
+}
+
+.link:hover {
+    color: #808080;
+}
+
+.adversiting1 {
+    width: 100px;
+    height: 70px;
+
+    margin: 5px 5px 20px 5px;
+
+    background-image: url(https://cdn-front.kwork.ru/pics/t3/46/6773188-1588661646.jpg);
+    background-size: contain;
+}
+
+.adversiting2 {
+    width: 100px;
+    height: 150px;
+
+    margin: 5px;
+
+    background-image: url(https://prgp.ru/userfls/portfolio/large/2575_makdonalds-reklama-okolo-m.jpg);
+    background-size: contain;
+}
+
+.page {
+    width: 800px;
+    margin: 10px 10px 10px 0px;
+    /* border-left: 1px solid #ff033e; */
+} 
+
+.name {
+    width: 95px;
+    /* background: linear-gradient(to left, #3494e6,#ec6ead); */
+    background: linear-gradient(to left, #780206, #061161);
+    border-radius: 15px;
+    margin-left: 20px;
+    padding-left: 9px;
+    color: white;
+    font-size: 24px;
+    font-family: Arial;
+}
+
+.avatar {
+    width: 150px;
+    height: 120px;
+    margin: 20px;
+    background-image: url(https://media.cdnandroid.com/item_images/561001/imagen-five-nights-at-freddy-s-0big.jpg);
+    background-size: contain;
+}
+
+.information{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.dop-info1 {
+    margin-right: 20px;
+    margin-left: 45px;
+    font-size: 20px;
+    font-family: Arial;
+    /* color: white;   */
+}
+
+.dop-info2 {
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: Arial; 
+    color: #191970;
+}
+
+.friends {
+    width: 200px;
+    height: 26px;
+    margin: 5px 10px 5px 0;
+
+    display: flex;
+    flex-flow: row wrap;
+} 
+
+.l-friends {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.r-friends {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.t-friends {
+    width: 105px;
+    /* background: linear-gradient(to left, #3494e6,#ec6ead); */
+    background: linear-gradient(to left, #780206, #061161);
+    border-radius: 15px;
+    color: white;
+    margin-left: 20px;
+    padding-left: 13px;
+    font-size: 24px;
+    font-family: Arial;
+}
+
+.friend-name {
+    font-size: 20px;
+}
+
+.friend1 {
+    width: 90px;
+    height: 50px;
+
+    margin: 5px 5px 2px 5px;
+
+    background-image: url(http://pm1.narvii.com/7089/6983e5a41e5c2ecc70fd0279e009bd120565ae7er1-1920-1080v2_uhq.jpg);
+    background-size: contain;
+}
+
+.friend2 {
+    width: 90px;
+    height: 50px;
+
+    margin: 5px 0 2px 5px;
+
+    background-image: url(http://pm1.narvii.com/6861/4782582b34acffd4061d38e54065084bb6af2b5fr1-1920-1080v2_uhq.jpg);
+    background-size: contain;
+}
+
+.friend3 {
+    width: 90px;
+    height: 50px;
+
+    margin: 5px;
+
+    background-image: url(https://coub-anubis-a.akamaized.net/coub_storage/coub/simple/cw_timeline_pic/6b804e93112/862fcc9783a1d84c9395a/1601664206_image.jpg);
+    background-size: contain;
+}
+
+.friend4 {
+    width: 90px;
+    height: 50px;
+
+    margin: 5px;
+
+    background-image: url(https://i.ytimg.com/vi/uPRdbTlc_4s/maxresdefault.jpg);
+    background-size: contain;
+}
+
+.freddy-web {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.photo {
+    width: 560px;
+    margin: 5px 10px 5px 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.t-photo {
+    width: 400px;
+    /* background: linear-gradient(to left, #3494e6,#ec6ead); */
+    background: linear-gradient(to left, #780206, #061161);
+    border-radius: 15px;
+    padding-left: 7px;
+    color: white;
+    font-size: 24px;
+    font-family: Arial;   
+}
+
+.photo1 {
+    width:180px;
+    height:115px;
+
+    margin-top: 5px;
+    margin-right: 10px;
+
+    background-image: url(https://ffwallpaper.com/wallup/five-nights-at-freddys/five-nights-at-freddys-11.jpg);
+
+    background-size: contain;
+}
+
+.photo2 {
+    width:180px;
+    height:115px;
+
+    margin-top: 5px;
+    margin-right: 10px;
+
+    background-image: url(https://i.ytimg.com/vi/g5kQ7BFMWXs/maxresdefault.jpg);
+
+    background-size: contain;
+}
+
+.photo3 {
+    width:180px;
+    height:115px;
+
+    margin-top: 5px;
+
+    background-image: url(https://wallpapertag.com/wallpaper/full/3/f/c/415611-five-nights-at-freddys-fnaf-wallpapers-1920x1080-high-resolution.jpg);
+
+    background-size: contain;
+}
+
+.record {
+    width: 560px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+.t-record {
+    width: 400px;
+    margin: 10px 30px 5px 0;
+    padding-left: 7px;
+    border-radius: 15px;
+    /* background: linear-gradient(to left, #3494e6,#ec6ead); */
+    background: linear-gradient(to left, #780206, #061161);
+    color: white;
+    font-size: 24px;
+    font-family: Arial;
+}
+
+.decoration {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.wall-decoration {
+    font-size: 22px;
+    font-family: Arial;
+}
+
+.record1 {
+    width: 540px;
+    height: 300px;
+    margin: 10px 30px 5px 0;
+    background-image: url(https://krot.info/uploads/posts/2021-01/1610237811_37-p-fon-fnaf-4-70.jpg);
+    background-size: contain;
+}
+
+.music1 {
+    width: 560px;
+    height: 40px;
+    margin: 10px 30px 5px 0;
+    border: solid 3px #483D8B;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.play {
+    width: 1px;
+    margin: 5px 0 5px 5px;
+    margin-left: 10px;
+    border: 15px solid transparent; 
+    border-left: 20px solid #202020;
+    border-radius: 10px;
+}
+
+.song1 {
+    font-size: 20px;
+    font-family: Arial;
+    margin: 9px 0 9px 0;
+}
+
+.music2 {
+    width: 560px;
+    height: 40px;
+    margin: 10px 30px 5px 0;
+    border: solid 3px #780206;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.stop {
+    width: 20px;
+    height: 20px;
+    margin: 5px 0 5px 5px;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: #202020;
+    border-style: double;
+    border-width: 0px 15px 0px 15px;
+    border-width: 0px 0px 0px 15px;
+    border-color: #202020;
+}
+
+.song2 {
+    font-size: 20px;
+    font-family: Arial;
+    margin: 9px 0 9px 0;
+}
+
+h1 {
+    margin-bottom: 5px;
+    border-radius: 10px;
+    
+}
